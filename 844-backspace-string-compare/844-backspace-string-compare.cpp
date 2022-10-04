@@ -20,17 +20,17 @@ public:
                     st2.pop();
             }
         }
-        if(st1.empty() and st2.empty())return true;
-        else if(st1.empty() or st2.empty())return false;
-        string ss="";
-        string tt="";
-        while(!st1.empty())
-        {ss+=st1.top();st1.pop();}
-        while(!st2.empty())
-        {
-            tt+=st2.top();
-            st2.pop();
-        }
-        return ss==tt;
+        // if(st1.empty() and st2.empty())return true;
+        // else if(st1.empty() or st2.empty())return false;
+        // string ss="";
+        // string tt="";
+        // while(!st1.empty())
+        // {ss+=st1.top();st1.pop();}
+        // while(!st2.empty())
+        // {
+        //     tt+=st2.top();
+        //     st2.pop();
+        // }
+        return st1==st2;
     }
 };
