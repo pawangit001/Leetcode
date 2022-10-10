@@ -8,9 +8,9 @@ public:
         vector<int>ch(26,0);
         for(int i=0;i<n;i++) ch[p[i]-'a']++;
         if(p[0]!='a'){p[0]='a';return p;}
-        for(int i=1;i<n;i++)
+        for(int i=1;i<n/2;i++)
         {
-           if(ch[p[i]-'a']%2==0 and p[i]!='a')
+           if(p[i]!='a')
            {
                p[i]='a';return p;
            }
