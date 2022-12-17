@@ -13,7 +13,7 @@ public:
         else if(op=="-")return b-a;
         else if(op=="/")return b/a;
         else 
-            return a*1ll*b;
+            return (long long)a* (long long int)b;
     }
     int evalRPN(vector<string>& tokens) {
         stack<long long int>s;
